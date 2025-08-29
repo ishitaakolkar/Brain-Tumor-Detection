@@ -2,7 +2,7 @@ pip install roboflow
 
 from roboflow import Roboflow
 
-rf = Roboflow(api_key="Nhfh2sBXFM1BkDMiLAj7")
+rf = Roboflow(api_key=API_KEY)
 project = rf.workspace().project("brain-tumor-detection-wfagt")
 model = project.version("1").model
 
