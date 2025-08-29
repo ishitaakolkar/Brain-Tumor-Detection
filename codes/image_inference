@@ -1,0 +1,12 @@
+# import the inference-sdk
+from inference_sdk import InferenceHTTPClient
+
+# initialize the client
+CLIENT = InferenceHTTPClient(
+    api_url="https://serverless.roboflow.com",
+    api_key= API_KEY,
+    use_gpu=True,
+)
+
+# infer on a local image
+result = CLIENT.infer("YOUR_IMAGE.jpg", model_id="brain-tumor-detection-wfagt/1")
